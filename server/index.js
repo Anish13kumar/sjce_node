@@ -17,7 +17,7 @@ app.listen(4000, (err) => {
 });
 
 mongoose               
-  .connect("mongodb://anish13:dotmail123@mongodb.youngstorage.in:27017/anish13_sjce?authMechanism=DEFAULT&authSource=admin", {
+  .connect("mongodb://root:example@mongodb:27017/sjce_leave?authMechanism=DEFAULT&authSource=admin", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
