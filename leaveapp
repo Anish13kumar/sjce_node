@@ -1,15 +1,15 @@
-# Use the official Node.js 14 image as base
+# Use the official Node.js 18 image as base
 FROM node:18
 
 # Install Git
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install -y git nano
 
 # Set the working directory in the container
 WORKDIR /app
 
 # Clone your Git repository
-RUN git clone https://github.com/Varunpro16/leave-form-Revised.git .
 
+RUN git clone https://github.com/Anish13kumar/sjce_node.git .
 # Install dependencies for backend
 RUN npm install --prefix server
 
